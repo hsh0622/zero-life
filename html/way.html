@@ -2,10 +2,90 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>실천방법</title>
-    <link rel="stylesheet" href="../css/way.css">
+    <link rel="stylesheet" href="../css/way.css" />
+    <style>
+        /* 기본 스타일 */
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .practice {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* practice-box 간 간격 */
+        .practice-box {
+            margin-bottom: 60px;
+        }
+
+        /* practice-content를 가로 flex 컨테이너로 */
+        .practice-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            text-align: left;
+            /* 왼쪽 영역 텍스트 왼쪽 정렬 */
+        }
+
+        /* 왼쪽 영역: 제목 + 이미지 세로 배치 */
+        .left-area {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            min-width: 320px;
+        }
+
+        .left-area h3 {
+            margin: 0;
+            font-size: 1.3rem;
+        }
+
+        /* 이미지 스타일 */
+        .practice-img {
+            width: 300px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 표 스타일 */
+        .practice-table {
+            width: 400px;
+            border-collapse: collapse;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .practice-table th,
+        .practice-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .practice-table th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+
+        /* 섹션 제목 중앙 정렬 */
+        .practice>h2 {
+            font-size: 2rem;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,36 +93,125 @@
         <h2>실천방법</h2>
 
         <div class="practice-box">
-            <h3>1. 거절하기</h3>
-            <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/qtzDqvumThc3YPHS7mQc.png" alt="거절하기 이미지"
-                class="practice-img">
+            <div class="practice-content">
+                <div class="left-area">
+                    <h3>1. 거절하기</h3>
+                    <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/qtzDqvumThc3YPHS7mQc.png" alt="거절하기 이미지"
+                        class="practice-img" />
+                </div>
+                <table class="practice-table">
+                    <tr>
+                        <th>상황</th>
+                        <th>거절 예시</th>
+                    </tr>
+                    <tr>
+                        <td>카페</td>
+                        <td>일회용 빨대, 뚜껑 거절</td>
+                    </tr>
+                    <tr>
+                        <td>배달</td>
+                        <td>일회용 수저, 포크 거절</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="practice-box">
-            <h3>2. 줄이기</h3>
-            <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/Y4JioHNff8h2jlxDYHIY.png" alt="줄이기 이미지"
-                class="practice-img">
+            <div class="practice-content">
+                <div class="left-area">
+                    <h3>2. 줄이기</h3>
+                    <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/Y4JioHNff8h2jlxDYHIY.png" alt="줄이기 이미지"
+                        class="practice-img" />
+                </div>
+                <table class="practice-table">
+                    <tr>
+                        <th>대상</th>
+                        <th>줄이기 예시</th>
+                    </tr>
+                    <tr>
+                        <td>포장</td>
+                        <td>벌크 제품 구매</td>
+                    </tr>
+                    <tr>
+                        <td>에너지</td>
+                        <td>불필요한 전기 끄기</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="practice-box">
-            <h3>3. 재사용</h3>
-            <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/XDcgxLRvB84vZhfjxXaq.png" alt="재사용 이미지"
-                class="practice-img">
+            <div class="practice-content">
+                <div class="left-area">
+                    <h3>3. 재사용</h3>
+                    <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/XDcgxLRvB84vZhfjxXaq.png" alt="재사용 이미지"
+                        class="practice-img" />
+                </div>
+                <table class="practice-table">
+                    <tr>
+                        <th>물품</th>
+                        <th>재사용 방법</th>
+                    </tr>
+                    <tr>
+                        <td>용기</td>
+                        <td>다회용 텀블러, 도시락통 사용</td>
+                    </tr>
+                    <tr>
+                        <td>의류</td>
+                        <td>헌 옷 리폼 또는 기부</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="practice-box">
-            <h3>4. 재활용</h3>
-            <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/cX4e7xXEn1dbn6JkCtEg.png" alt="재활용 이미지"
-                class="practice-img">
+            <div class="practice-content">
+                <div class="left-area">
+                    <h3>4. 재활용</h3>
+                    <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/cX4e7xXEn1dbn6JkCtEg.png" alt="재활용 이미지"
+                        class="practice-img" />
+                </div>
+                <table class="practice-table">
+                    <tr>
+                        <th>종류</th>
+                        <th>재활용 팁</th>
+                    </tr>
+                    <tr>
+                        <td>플라스틱</td>
+                        <td>라벨 제거 후 배출</td>
+                    </tr>
+                    <tr>
+                        <td>캔/병</td>
+                        <td>깨끗이 씻고 분리배출</td>
+                    </tr>
+                </table>
+            </div>
         </div>
 
         <div class="practice-box">
-            <h3>5. 썩히기</h3>
-            <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/8dyFqnej50y00vhGC4Uv.png" alt="썩히기 이미지"
-                class="practice-img">
+            <div class="practice-content">
+                <div class="left-area">
+                    <h3>5. 썩히기</h3>
+                    <img src="https://www.2050cnc.go.kr/storage/ck/2022/07/8dyFqnej50y00vhGC4Uv.png" alt="썩히기 이미지"
+                        class="practice-img" />
+                </div>
+                <table class="practice-table">
+                    <tr>
+                        <th>재료</th>
+                        <th>활용 방법</th>
+                    </tr>
+                    <tr>
+                        <td>음식물 쓰레기</td>
+                        <td>퇴비화(EM흙 등)</td>
+                    </tr>
+                    <tr>
+                        <td>커피 찌꺼기</td>
+                        <td>탈취제나 퇴비로 활용</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </section>
-
 </body>
 
 </html>

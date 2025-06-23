@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZeroLife</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/signIn.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
 </head>
 
 <!-- 페이지 로드 시 openPopup 함수 실행 -->
 <body onload="openPopup()">
+<<<<<<< HEAD
     <header>
         <!-- 로고 클릭 시 메인 페이지로 이동 -->
         <a href="../html/main.html"><img class="zeroLifeLogo" src="../images/ZeroLIfeLogo.png" alt="ZeroLIfeLogo"></a>
@@ -51,11 +53,100 @@
             <div id="footerBottom">
                 <!-- 저작권 표시 -->
                 <span>© 2025 ZeroLife. All rights reserved.</span>
+=======
+    <div class="Main">
+        <header>
+            <a href="../html/main.html"><img class="zeroLifeLogo" src="../images/ZeroLIfeLogo.png"
+                    alt="ZeroLIfeLogo"></a>
+            <div class="signBox">
+                <span id="signIn" class="signInButton">로그인</span>
+                <span> | </span>
+                <span id="signUp">회원가입</span>
             </div>
+
+        </header>
+        <nav>
+            <ul class="navList">
+                <li class="navBox" onclick="onClickAbout()">제로웨이스트란?</li>
+                <li class="navBox" onclick="onClickWay()">실천방법</li>
+                <li class="navBox">제품추천</li>
+                <li class="navBox">커뮤니티</li>
+                <li class="navBox">캠페인&뉴스</li>
+            </ul>
+        </nav>
+        <section>
+            <iframe id="contentFrame" src="" width="100%" height="740px" style="border:none;"></iframe>
+
+            <img id="backgroundImg" src="../images/earthBackgroundImg.png" alt="earth">
+            <span id="backgroundSpan">당신의 하루가 지구를 바꿉니다</span>
+        </section>
+        <footer>
+            <div class="footerContainer">
+                <div id="footerTop">
+                    <span>Tel : 010-5787-8064</span> |
+                    <a class="hrefText" href="#">개인정보처리방침</a>
+                </div>
+                <div id="footerBottom">
+                    <span>© 2025 ZeroLife. All rights reserved.</span>
+                </div>
+>>>>>>> b90df60 (끝..)
+            </div>
+        </footer>
+    </div>
+
+    <form class="signInBackground">
+        <div class="signInPanel">
+            <img src="../images/ZeroLIfeLogo.png" alt="logo" class="signInLogo">
+            <div class="idBox">
+                <input id="idInput" type="text" placeholder="아이디를 입력해주세요.">
+            </div>
+            <div class="passBox">
+                <input id="passInput" type="password" placeholder="비밀번호를 입력해주세요.">
+            </div>
+            <button type="submit" class="signInButtonBox">
+                <div class="signInButtonText">로그인</div>
+            </button>
+            <div class="noAcc" id="toSignUp">계정이 없으신가요?</div>
+            <button class="closeButton">
+                X
+            </button>
         </div>
-    </footer>
+    </form>
+
+    <form class="signUpBackground">
+        <div class="signUpPanel">
+            <img src="../Images/ZeroLIfeLogo.png" alt="logo" class="signUpLogo">
+            <div id="signUpIdTextBox">
+                <div id="signUpIdText">아이디</div>
+            </div>
+            <div class="signUpIdBox">
+                <input class="signUpIdInput" type="text" placeholder="영문/숫자로 입력해주세요.">
+            </div>
+            <div id="signUpPassTextBox">
+                <div id="signUpPassText">비밀번호</div>
+            </div>
+            <div class="signUpPassBox">
+                <input class="signUpPassInput" type="password" placeholder="8자 이상 입력해주세요.">
+            </div>
+            <div id="signUpPassTextBoxCheck">
+                <div id="signUpPassTextCheck">비밀번호 확인</div>
+            </div>
+            <div class="signUpPassBoxCheck">
+                <input class="signUpPassInputCheck" type="password" placeholder="비밀번호를 입력해주세요.">
+            </div>
+            <button type="submit" class="signUpButtonBox">
+                <div class="signUpButtonText">회원가입</div>
+            </button>
+            <div class="yesAcc" id="toSignIn">계정이 있으신가요?</div>
+            <button class="closeButton">
+                X
+            </button>
+        </div>
+    </form>
 
     <script src="../js/main.js"></script>
+    <script src="../js/menuClick.js"></script>
+    <script src="../js/signIn.js"></script>
 </body>
 
 </html>

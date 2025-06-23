@@ -1,35 +1,83 @@
-.practice {
-  padding: 40px 10%;
-  background-color: white;
-  margin-left: 200px;
-}
-
-.practice h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #222;
-}
-
-.practice-box {
-  margin-bottom: 50px;
-}
-
-.practice-box h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-  color: #1a1a1a;
-}
-
-.practice-box p {
-  font-size: 16px;
-  margin-bottom: 15px;
+/* 전체 body 기본 스타일 */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
   color: #333;
 }
 
+/* 전체 섹션 너비와 중앙 정렬 */
+.practice {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* practice-box 들 사이 간격 */
+.practice-box {
+  margin-bottom: 60px;
+}
+
+/* 섹션 제목 (h2) 스타일 */
+.practice > h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+/* practice-content: 이미지+제목과 표 가로 flex 배치 */
+.practice-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  text-align: left; /* 왼쪽 영역 텍스트 왼쪽 정렬 */
+}
+
+/* 왼쪽 영역: 제목과 이미지 세로 정렬 */
+.left-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  min-width: 320px;
+}
+
+/* 왼쪽 영역 제목 스타일 */
+.left-area h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* 이미지 스타일 */
 .practice-img {
-  width: 100%;
-  max-width: 600px;
+  width: 300px;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 표 기본 스타일 */
+.practice-table {
+  width: 400px;
+  border-collapse: collapse;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* 표 셀 스타일 */
+.practice-table th,
+.practice-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 표 헤더 배경 및 글자 굵기 */
+.practice-table th {
+  background-color: #f9f9f9;
+  font-weight: bold;
 }
