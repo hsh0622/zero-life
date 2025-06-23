@@ -1,12 +1,15 @@
+/* 모든 요소 기본 여백과 패딩 제거 */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* 화면 높이 100vh로 설정 */
 body {
   height: 100vh;
 }
 
+/* 헤더 영역 스타일 */
 header {
   width: 100%;
   height: 100px;
@@ -16,6 +19,7 @@ header {
   border-bottom: 1px solid #ccc;
 }
 
+/* 로고 이미지 크기 및 위치 */
 .zeroLifeLogo {
   width: 260px;
   height: 54px;
@@ -23,24 +27,29 @@ header {
   margin-top: 20px;
 }
 
+/* 로고에 다가가면 포인터로 변경 */
 .zeroLifeLogo:hover {
   cursor: pointer;
 }
 
+/* 로그인/회원가입 위치 조정 */
 .signBox {
   margin-top: 38px;
   margin-right: 46px;
 }
 
+/* 로그인 글자 크기 */
 #signIn {
   font-size: 18px;
 }
 
+/* 로그인으로 마우스 옮기면 모양 및 색상 변경 */
 #signIn:hover {
   cursor: pointer;
   color: blue;
 }
 
+/* 회원가입 글자 크기 */
 #signUp {
   font-size: 18px;
 }

@@ -10,10 +10,13 @@
 
 </head>
 
+<!-- 페이지 로드 시 openPopup 함수 실행 -->
 <body onload="openPopup()">
     <header>
+        <!-- 로고 클릭 시 메인 페이지로 이동 -->
         <a href="../html/main.html"><img class="zeroLifeLogo" src="../images/ZeroLIfeLogo.png" alt="ZeroLIfeLogo"></a>
         <div class="signBox">
+            <!-- 로그인, 회원가입 버튼 -->
             <span id="signIn">로그인</span>
             <span> | </span>
             <span id="signUp">회원가입</span>
@@ -22,6 +25,7 @@
     </header>
     <nav>
         <ul class="navList">
+            <!-- 메뉴 항목들, 클릭 시 자바스크립트 실행 -->
             <li class="navBox" onclick="onClickAbout()">제로웨이스트란?</li>
             <li class="navBox" onclick="onClickWay()">실천방법</li>
             <li class="navBox">제품추천</li>
@@ -30,18 +34,22 @@
         </ul>
     </nav>
     <section>
+        <!-- 메뉴를 클릭할 때 페이지가 바뀌는 창 -->
         <iframe id="contentFrame" src="" width="100%" height="740px" style="border:none;"></iframe>
 
+        <!-- 배경 이미지와 텍스트 -->
         <img id="backgroundImg" src="../images/earthBackgroundImg.png" alt="earth">
         <span id="backgroundSpan">당신의 하루가 지구를 바꿉니다</span>
     </section>
     <footer>
         <div class="footerContainer">
             <div id="footerTop">
+                <!-- 연락처 및 개인정보 처리방침 링크 -->
                 <span>Tel : 010-5787-8064</span> |
                 <a class="hrefText" href="#">개인정보처리방침</a>
             </div>
             <div id="footerBottom">
+                <!-- 저작권 표시 -->
                 <span>© 2025 ZeroLife. All rights reserved.</span>
             </div>
         </div>
