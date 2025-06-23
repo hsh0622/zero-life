@@ -21,6 +21,8 @@ const onClickAbout = () => {
   iframe.style.display = "block";
   const image = document.getElementById("backgroundImg");
   image.style.display = "none";
+  const imageText = document.getElementById("backgroundSpan");
+  imageText.style.display = "none";
 };
 
 const onClickWay = () => {
@@ -29,4 +31,6 @@ const onClickWay = () => {
   iframe.style.display = "block";
   const image = document.getElementById("backgroundImg");
   image.style.display = "none";
+  const imageText = document.getElementById("backgroundSpan");
+  imageText.style.display = "none";
 };

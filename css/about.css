@@ -1,0 +1,29 @@
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  padding: 40px;
+  background-color: #fdfdfd;
+}
+
+.aboutContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.aboutImage {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}

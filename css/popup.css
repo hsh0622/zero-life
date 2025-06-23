@@ -1,0 +1,44 @@
+/* 전체 높이 설정 */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 컨테이너가 팝업 창 전체를 채우도록 */
+.popupContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 본문 텍스트 */
+h3 {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* 닫기 버튼을 정확히 우하단에 고정 */
+#closeBtn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: #444;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#closeBtn:hover {
+  background-color: #222;
+}
