@@ -21,10 +21,10 @@ header {
 
 /* 로고 이미지 크기 및 위치 */
 .zeroLifeLogo {
-  width: 260px;
-  height: 54px;
+  width: 220px;
+  height: 48px;
   margin-left: 32px;
-  margin-top: 20px;
+  margin-top: 24px;
 }
 
 /* 로고에 다가가면 포인터로 변경 */
@@ -34,7 +34,7 @@ header {
 
 /* 로그인/회원가입 위치 조정 */
 .signBox {
-  margin-top: 38px;
+  margin-top: 40px;
   margin-right: 46px;
 }
 
@@ -143,4 +143,60 @@ footer {
 
 #contentFrame {
   display: none;
+}
+
+/* -------------------------- */
+/* ✅ 반응형 (태블릿 이하)    */
+/* -------------------------- */
+@media (max-width: 768px) {
+  .zeroLifeLogo {
+    width: 200px;
+    height: auto;
+    margin-left: 16px;
+  }
+
+  .signBox {
+    margin-top: 30px;
+    margin-right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+
+  #signIn,
+  #signUp {
+    font-size: 16px;
+  }
+
+  .navBox {
+    font-size: 14px;
+    width: auto;
+    padding: 0 10px;
+  }
+
+  #backgroundSpan {
+    font-size: 32px;
+    top: 20%;
+    left: 50%;
+  }
+
+  footer {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .footerContainer {
+    margin: 20px 0 0 0;
+  }
+
+  #backgroundSpan {
+    position: absolute;
+    font-size: 24px;
+    color: white;
+    top: 22%;
+    left: 26%;
+    transform: translate(-50%, -50%);
+    font-family: "Nanum Gothic", sans-serif;
+  }
 }

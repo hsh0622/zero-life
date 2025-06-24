@@ -310,3 +310,73 @@
   cursor: pointer;
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .signInPanel,
+  .signUpPanel {
+    width: 90%;
+    height: auto;
+    padding: 24px 16px;
+  }
+
+  .signInLogo,
+  .signUpLogo {
+    width: 80%;
+    height: auto;
+    margin-top: 16px;
+    margin-bottom: 24px;
+  }
+
+  .idBox,
+  .passBox,
+  .signUpIdBox,
+  .signUpPassBox,
+  .signUpPassBoxCheck {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 12px;
+  }
+
+  #idInput,
+  #passInput,
+  .signUpIdInput,
+  .signUpPassInput,
+  .signUpPassInputCheck {
+    font-size: 16px;
+  }
+
+  #signUpIdTextBox,
+  #signUpPassTextBox,
+  #signUpPassTextBoxCheck {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+  }
+
+  #signUpIdText,
+  #signUpPassText,
+  #signUpPassTextCheck {
+    font-size: 14px;
+  }
+
+  .signInButtonBox,
+  .signUpButtonBox {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .noAcc,
+  .yesAcc {
+    font-size: 13px;
+    margin-top: 12px;
+  }
+
+  .closeButton {
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    font-size: 18px;
+  }
+}

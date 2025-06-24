@@ -81,3 +81,52 @@ body {
   background-color: #f9f9f9;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .practice {
+    max-width: 100%;
+  }
+
+  .practice-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-area {
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-area h3 {
+    font-size: 1.2rem;
+  }
+
+  .practice-img {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .practice-table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .practice-table th,
+  .practice-table td {
+    padding: 8px;
+  }
+
+  .practice > h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .practice-box {
+    margin-bottom: 40px;
+  }
+}

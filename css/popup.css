@@ -42,3 +42,26 @@ p {
 #closeBtn:hover {
   background-color: #222;
 }
+
+@media (max-width: 768px) {
+  .popupContainer {
+    padding: 12px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  #closeBtn {
+    font-size: 13px;
+    padding: 5px 10px;
+    bottom: 12px;
+    right: 12px;
+  }
+}
