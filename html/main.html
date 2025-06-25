@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZeroLife</title>
+    <!-- css 연결 -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/signIn.css">
+    <!-- 구글 폰트  -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 
 </head>
 
 <body onload="openPopup()">
+    <!-- 전체 페이지 감싸는 컨테이너 -->
     <div class="Main">
+        <!-- 헤더 - 로고와 로그인/회원가입 버튼 -->
         <header>
-            <a href="../html/main.html"><img class="zeroLifeLogo" src="../images/ZeroLIfeLogo.png"
-                    alt="ZeroLIfeLogo"></a>
+            <!-- 로고 - 메인 페이지로 이동하는 링크 -->
+            <a href="../html/main.html"><img class="zeroLifeLogo" src="../images/ZeroLIfeLogo.png" alt="ZeroLIfeLogo"></a>
+
+            <!-- 로그인/회원가입 버튼 박스 -->
             <div class="signBox">
                 <span id="signIn" class="signInButton">로그인</span>
                 <span> | </span>
@@ -23,8 +29,11 @@
             </div>
 
         </header>
+
+        <!-- 메뉴바 -->
         <nav>
             <ul class="navList">
+                <!-- 메뉴 항목 클릭 시 자바스크립트 함수 호출 -->
                 <li class="navBox" onclick="onClickAbout()">제로웨이스트란?</li>
                 <li class="navBox" onclick="onClickWay()">실천방법</li>
                 <li class="navBox">제품추천</li>
@@ -32,75 +41,101 @@
                 <li class="navBox">캠페인&뉴스</li>
             </ul>
         </nav>
+        <!-- 메인 콘텐츠 영역 -->
         <section>
+            <!-- 콘텐츠 iframe으로 불러옴 -->
             <iframe id="contentFrame" src="" width="100%" height="740px" style="border:none;"></iframe>
 
+            <!-- 배경 이미지 -->
             <img id="backgroundImg" src="../images/earthBackgroundImg.png" alt="earth">
+            <!-- 배경 위 텍스트  -->
             <span id="backgroundSpan">당신의 하루가 지구를 바꿉니다</span>
         </section>
+
+        <!-- 하단 영역 -->
         <footer>
             <div class="footerContainer">
                 <div id="footerTop">
+                    <!-- 전화번호 / 개인정보 -->
                     <span>Tel : 010-5787-8064</span> |
                     <a class="hrefText" href="#">개인정보처리방침</a>
                 </div>
                 <div id="footerBottom">
+                    <!-- 저작권 표시 -->
                     <span>© 2025 ZeroLife. All rights reserved.</span>
                 </div>
             </div>
         </footer>
     </div>
 
+    <!-- 로그인 폼 -->
     <form class="signInBackground">
         <div class="signInPanel">
+            <!-- 로그인 로고 -->
             <img src="../images/ZeroLIfeLogo.png" alt="logo" class="signInLogo">
+            <!-- 아이디 입력 -->
             <div class="idBox">
                 <input id="idInput" type="text" placeholder="아이디를 입력해주세요.">
             </div>
+            <!-- 비밀번호 입력 -->
             <div class="passBox">
                 <input id="passInput" type="password" placeholder="비밀번호를 입력해주세요.">
             </div>
+            <!-- 로그인 버튼 -->
             <button type="submit" class="signInButtonBox">
                 <div class="signInButtonText">로그인</div>
             </button>
+            <!-- 회원가으로 이동 안내 텍스트 -->
             <div class="noAcc" id="toSignUp">계정이 없으신가요?</div>
+            <!-- 로그인 폼 닫기 버튼 -->
             <button class="closeButton">
                 X
             </button>
         </div>
     </form>
 
+    <!-- 회원가입 폼 -->
     <form class="signUpBackground">
         <div class="signUpPanel">
+            <!-- 회원가입 로고 -->
             <img src="../Images/ZeroLIfeLogo.png" alt="logo" class="signUpLogo">
+            <!-- 아이디 입력 텍스트 -->
             <div id="signUpIdTextBox">
                 <div id="signUpIdText">아이디</div>
             </div>
+            <!-- 아이디 입력창 -->
             <div class="signUpIdBox">
                 <input class="signUpIdInput" type="text" placeholder="영문/숫자로 입력해주세요.">
             </div>
+            <!-- 비밀번호 입력 텍스트 -->
             <div id="signUpPassTextBox">
                 <div id="signUpPassText">비밀번호</div>
             </div>
+            <!-- 비밀번호 입력창 -->
             <div class="signUpPassBox">
                 <input class="signUpPassInput" type="password" placeholder="8자 이상 입력해주세요.">
             </div>
+            <!-- 비밀번호 확인 텍스트 -->
             <div id="signUpPassTextBoxCheck">
                 <div id="signUpPassTextCheck">비밀번호 확인</div>
             </div>
+            <!-- 비밀번호 확인 입력창 -->
             <div class="signUpPassBoxCheck">
                 <input class="signUpPassInputCheck" type="password" placeholder="비밀번호를 입력해주세요.">
             </div>
+            <!-- 회원가입 버튼 -->
             <button type="submit" class="signUpButtonBox">
                 <div class="signUpButtonText">회원가입</div>
             </button>
+            <!-- 로그인 이동 안내 텍스트 -->
             <div class="yesAcc" id="toSignIn">계정이 있으신가요?</div>
+            <!-- 회원가입 폼 닫기 버튼 -->
             <button class="closeButton">
                 X
             </button>
         </div>
     </form>
-
+    <!-- 자바스크립트 파일 연결 -->
     <script src="../js/main.js"></script>
     <script src="../js/menuClick.js"></script>
     <script src="../js/signIn.js"></script>
