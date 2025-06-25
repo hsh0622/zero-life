@@ -9,22 +9,25 @@
   padding: 0;
 }
 
-/* 화면 높이 100vh로 설정 */
+/* 화면 높이 설정 */
 body {
   height: 100vh;
 }
 
-/* 헤더 영역 스타일 */
+
+/* ========================== */
+/* ✅ 헤더 영역               */
+/* ========================== */
 header {
   width: 100%;
   height: 100px;
   background-color: white;
-  display: flex;
+  display: flex; /* flex 사용 */ 
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
 }
 
-/* 로고 이미지 크기 및 위치 */
+/* 로고 이미지 크기 및 위치 설정 */
 .zeroLifeLogo {
   width: 220px;
   height: 48px;
@@ -32,7 +35,7 @@ header {
   margin-top: 24px;
 }
 
-/* 로고에 다가가면 포인터로 변경 */
+/* 로고에 마우스 올렸을 때 포인터로 변경 */
 .zeroLifeLogo:hover {
   cursor: pointer;
 }
@@ -59,24 +62,30 @@ header {
   font-size: 18px;
 }
 
+/* 회원가입 버튼에 마우스를 올렸을 때 모양과 색상 변경 */
 #signUp:hover {
   cursor: pointer;
   color: blue;
 }
 
+
+/* ========================== */
+/* ✅ 메뉴바(nav)      */
+/* ========================== */
 nav {
   width: 100%;
   height: 60px;
   background-color: white;
   border-bottom: 1px solid #ccc;
-  display: flex;
+  display: flex; /* 플렉스 사용 */
   justify-content: center;
   align-items: center;
 }
 
+/* 메뉴 바 안의 리스트 설정 */
 .navList {
-  list-style: none;
-  display: flex;
+  list-style: none; /* 리스트 점 제거 */
+  display: flex; /* 리스트 가로 배치 */
   width: 100%;
   height: 100%;
   margin: 0;
@@ -84,23 +93,28 @@ nav {
   justify-content: center;
 }
 
+/* 메뉴 바 안의 각 항목 박스 설정 */
 .navBox {
-  border-radius: 5px;
+  border-radius: 5px; /* 모서리 둥글게 변경 */
   width: 15%;
   height: 100%;
   text-align: center;
-  display: flex;
+  display: flex; /* 수직/수평 정렬 */
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; /* 호버 시 배경색 부드럽게 변경 */
 }
 
+/* 네비게이션 박스 호버 시 배경색 변경 */
 .navBox:hover {
   cursor: pointer;
   background-color: #f0f0f0;
 }
 
+/* ========================== */
+/* ✅ 메인 콘텐츠 영역        */
+/* ========================== */
 section {
   width: 100%;
   height: 740px;
@@ -109,12 +123,14 @@ section {
   border-bottom: 1px solid #ccc;
 }
 
+/* 배경 이미지 설정 */
 #backgroundImg {
   position: absolute;
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; /* 이미지가 영역에 꽉 차게 */
 }
 
+/* 배경 이미지 위 텍스트 설정 */
 #backgroundSpan {
   position: absolute;
   font-size: 48px;
@@ -125,27 +141,34 @@ section {
   font-family: "Nanum Gothic", sans-serif;
 }
 
+/* ========================== */
+/* ✅ 하단 영역               */
+/* ========================== */
 footer {
   background-color: #2b3242;
   width: 100%;
   height: 200px;
-  display: flex;
+  display: flex; /* flex사용 (수평 정렬) */
 }
 
+/* 하단 내부 콘텐츠 스타일 */
 .footerContainer {
   color: white;
   margin-top: 60px;
   margin-left: 20px;
 }
 
+/* 저작권 정보 들어갈 위치 */
 #footerTop {
   margin-bottom: 20px;
 }
 
+/* 하이퍼링크 글 색상 */
 .hrefText {
   color: #4a90e2;
 }
 
+/* 콘텐츠 프레임 안보이게 설정 */
 #contentFrame {
   display: none;
 }
@@ -154,12 +177,14 @@ footer {
 /* ✅ 반응형 (태블릿 이하)    */
 /* -------------------------- */
 @media (max-width: 768px) {
+  /* 로고 크기 축소 및 여백 조정 */
   .zeroLifeLogo {
     width: 200px;
     height: auto;
     margin-left: 16px;
   }
 
+  /* 로그인/회원가입 박스 간격 조정 및 수평 정렬 */
   .signBox {
     margin-top: 30px;
     margin-right: 20px;
@@ -167,30 +192,35 @@ footer {
     gap: 10px;
   }
 
+  /* 로그인, 회원가입 텍스트 크기 축소 */
   #signIn,
   #signUp {
     font-size: 16px;
   }
 
+  /* 메뉴 항목 크기 줄이고 여백 추가 */
   .navBox {
     font-size: 14px;
     width: auto;
     padding: 0 10px;
   }
 
+  /* 배경 텍스트 위치와 크기 반응형 조정 */
   #backgroundSpan {
     font-size: 32px;
     top: 20%;
     left: 50%;
   }
 
+  /* 하단을 세로로 정렬하고 높이 자동화 */
   footer {
     height: auto;
-    flex-direction: column;
+    flex-direction: column; /* 세로 정렬 */
     align-items: flex-start;
     padding: 20px;
   }
 
+  /* 하단 내부 여백 재조정 */
   .footerContainer {
     margin: 20px 0 0 0;
   }
