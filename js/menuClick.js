@@ -19,3 +19,42 @@ const onClickWay = () => {
   const imageText = document.getElementById("backgroundSpan"); //배경 이미지 텍스트 요소를 가져옴
   imageText.style.display = "none"; //배경 이미지 텍스트를 숨김
 };
+
+const onClickRecommend = () => {
+  // 제품추천 메뉴 클릭 시
+  const iframe = document.getElementById("contentFrame");
+  iframe.src = "../html/recommend.html";
+  iframe.style.display = "block";
+
+  const image = document.getElementById("backgroundImg");
+  image.style.display = "none";
+
+  const imageText = document.getElementById("backgroundSpan");
+  imageText.style.display = "none";
+};
+
+const onClickCommunity = () => {
+  // 커뮤니티 메뉴 클릭 시
+  const iframe = document.getElementById("contentFrame");
+  iframe.src = "../html/community.html";
+  iframe.style.display = "block";
+
+  const image = document.getElementById("backgroundImg");
+  image.style.display = "none";
+
+  const imageText = document.getElementById("backgroundSpan");
+  imageText.style.display = "none";
+};
+
+const onClickNews = () => {
+  // 캠페인&뉴스 메뉴 클릭 시
+  const iframe = document.getElementById("contentFrame");
+  iframe.src = "../html/news.html";
+  iframe.style.display = "block";
+
+  const image = document.getElementById("backgroundImg");
+  image.style.display = "none";
+
+  const imageText = document.getElementById("backgroundSpan");
+  imageText.style.display = "none";
+};
